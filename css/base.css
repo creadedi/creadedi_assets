@@ -1,0 +1,165 @@
+.overflow {
+    overflow: hidden!important;
+}
+
+.section {
+    overflow-x:hidden!important;
+}
+
+.outline-text {
+     -webkit-text-fill-color:transparent;
+}
+.outline-white {
+     -webkit-text-stroke: 3px #ffffff;
+}
+.outline-blue {
+     -webkit-text-stroke: 3px #3697ff;
+}
+
+.w-background-video > video {
+     position: static;
+}
+
+a,
+a:hover {
+   text-decoration: none;
+}
+
+/* Menu Full Structure */
+.menu_full,
+.page_contact {
+     transform: translateX(100%);
+     transition: all .8s ease-in-out .4s;
+}
+
+.active-menufull,
+.active-contact {
+     transform: translateX(0%);
+}
+/* Fim Menu Full Structure */
+
+
+/* Menu Trigger Structure */
+.menu-trigger {
+     border-color: #f10cad;
+}
+
+.line-menu {
+     background-color:#f10cad;
+}
+
+.line-menu:nth-child(1) {
+     top: 17px;
+     transform: rotate(0deg);
+}
+
+.line-menu:nth-child(2) {
+     opacity: 1;
+}
+
+.line-menu:nth-child(3) {
+     bottom: 17px;
+     transform: rotate(0deg);
+}
+
+.active-trigger,
+.reverse-trigger {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.menu-trigger.active-trigger {
+     animation-name: colortrigger;
+}
+
+.line-menu.active-trigger:nth-child(1) {
+     animation-name: animatrigger-top;
+}
+
+.line-menu.active-trigger:nth-child(2) {
+     animation-name: animatrigger-center;
+}
+
+.line-menu.active-trigger:nth-child(3) {
+     animation-name: animatrigger-bottom;
+}
+
+.menu-trigger.reverse-trigger {
+     animation-name: colortriggerreverse;
+}
+
+.line-menu.reverse-trigger:nth-child(1) {
+     animation-name: animatrigger-topreverse;
+}
+
+.line-menu.reverse-trigger:nth-child(2) {
+     animation-name: animatrigger-centerreverse;
+}
+
+.line-menu.reverse-trigger:nth-child(3) {
+     animation-name: animatrigger-bottomreverse;
+}
+
+@keyframes animatrigger-top {
+  0%   {top: 17px; transform: rotate(0deg); background-color:#f10cad;}
+  25%  {top: 17px; transform: rotate(0deg); background-color:#f10cad;}
+  50%  {top: 33px; transform: rotate(00deg); background-color:#f10cad;}
+  75%  {top: 33px; transform: rotate(-45deg); background-color:#ffffff;}
+  100% {top: 33px; transform: rotate(-45deg); background-color:#ffffff;}
+}
+
+@keyframes animatrigger-center {
+  0%   {opacity: 1;}
+  25%  {opacity: 1;}
+  50%  {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes animatrigger-bottom {
+  0%   {bottom: 17px; transform: rotate(0deg); background-color:#f10cad;}
+  25%  {bottom: 17px; transform: rotate(0deg); background-color:#f10cad;}
+  50%  {bottom: 33px; transform: rotate(0deg); background-color:#f10cad;}
+  75%  {bottom: 33px; transform: rotate(45deg); background-color:#ffffff;}
+  100% {bottom: 33px; transform: rotate(45deg); background-color:#ffffff;}
+}
+
+@keyframes colortrigger {
+  0%   {border-color: #f10cad;}
+  25%  {border-color: #f10cad;}
+  50%  {border-color: #f10cad;}
+  75%  {border-color: #ffffff;}
+  100% {border-color: #ffffff;}
+}
+
+@keyframes animatrigger-topreverse {
+  0%   {top: 33px; transform: rotate(-45deg); background-color:#ffffff;}
+  25%  {top: 33px; transform: rotate(-45deg); background-color:#ffffff;}
+  50%  {top: 33px; transform: rotate(00deg); background-color:#f10cad;}
+  75%  {top: 17px; transform: rotate(0deg); background-color:#f10cad;}
+  100% {top: 17px; transform: rotate(0deg); background-color:#f10cad;}
+}
+
+@keyframes animatrigger-centerreverse {
+  0%   {opacity: 0;}
+  25%  {opacity: 0;}
+  50%  {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes animatrigger-bottomreverse {
+  0%   {bottom: 33px; transform: rotate(45deg); background-color:#ffffff;}
+  25%  {bottom: 33px; transform: rotate(45deg); background-color:#ffffff;}
+  50%  {bottom: 33px; transform: rotate(0deg); background-color:#f10cad;}
+  75%  {bottom: 17px; transform: rotate(0deg); background-color:#f10cad;}
+  100% {bottom: 17px; transform: rotate(0deg); background-color:#f10cad;}
+}
+
+@keyframes colortriggerreverse {
+  0%   {border-color: #ffffff;}
+  25%  {border-color: #ffffff;}
+  50%  {border-color: #f10cad;}
+  75%  {border-color: #f10cad;}
+  100% {border-color: #f10cad;}
+}
+
+/* End Menu Trigger Structure */

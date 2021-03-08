@@ -1,0 +1,12 @@
+.lettring-contact {
+    left: 0;
+    animation-name: letra;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes letra {
+    0%   {left: 0;}
+    100% {left: -139%;}
+}
